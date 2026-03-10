@@ -1,0 +1,22 @@
+name: 'GitHub Tip Bot'
+description: 'A GitHub Action to tip contributors with RTC tokens'
+author: 'yifan19860831-hub'
+branding:
+  icon: 'gift'
+  color: 'green'
+
+inputs:
+  github-token:
+    description: 'GitHub token for API access'
+    required: true
+  rustchain-api-url:
+    description: 'RustChain API URL'
+    required: true
+    default: 'https://api.rustchain.io'
+  rustchain-api-key:
+    description: 'RustChain API Key'
+    required: true
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
