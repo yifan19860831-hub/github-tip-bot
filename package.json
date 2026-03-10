@@ -1,0 +1,31 @@
+{
+  "name": "github-tip-bot",
+  "version": "1.0.0",
+  "description": "A GitHub Action to tip contributors with RTC tokens",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "ncc build src/index.js -o dist",
+    "test": "jest",
+    "lint": "eslint src/"
+  },
+  "keywords": [
+    "github",
+    "action",
+    "tip",
+    "rtc",
+    "rustchain",
+    "bot"
+  ],
+  "author": "yifan19860831-hub",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0",
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.1",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0"
+  }
+}
